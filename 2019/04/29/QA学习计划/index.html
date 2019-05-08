@@ -5,16 +5,19 @@
   
 
   
-  <title>QA学习计划 | </title>
+  <title>QA学习 | </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="QA学习计划">
+  <meta name="description" content="一、功能测试基础知识 什么是功能测试   功能测试, 也叫行为测试, 也有一种说法叫黑盒测试, 即测试人员完全不知道程序的内部是如何运行的   功能测试是所有测试工作中占比最大, 也是最重要的部分   主要是需求分析师根据用户需求编写出功能的用例, 然后由测试工程师编写测试用例, 并逐项进行测试验证, 确保执行结果与预期的结果一致 为什么需要功能测试  站在用户的角度上, 确保系统的实现与需求一致">
+<meta property="og:type" content="article">
+<meta property="og:title" content="QA学习">
 <meta property="og:url" content="http://yoursite.com/2019/04/29/QA学习计划/index.html">
 <meta property="og:site_name">
+<meta property="og:description" content="一、功能测试基础知识 什么是功能测试   功能测试, 也叫行为测试, 也有一种说法叫黑盒测试, 即测试人员完全不知道程序的内部是如何运行的   功能测试是所有测试工作中占比最大, 也是最重要的部分   主要是需求分析师根据用户需求编写出功能的用例, 然后由测试工程师编写测试用例, 并逐项进行测试验证, 确保执行结果与预期的结果一致 为什么需要功能测试  站在用户的角度上, 确保系统的实现与需求一致">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-29T09:15:55.963Z">
+<meta property="og:updated_time" content="2019-05-08T06:31:13.351Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="QA学习计划">
+<meta name="twitter:title" content="QA学习">
+<meta name="twitter:description" content="一、功能测试基础知识 什么是功能测试   功能测试, 也叫行为测试, 也有一种说法叫黑盒测试, 即测试人员完全不知道程序的内部是如何运行的   功能测试是所有测试工作中占比最大, 也是最重要的部分   主要是需求分析师根据用户需求编写出功能的用例, 然后由测试工程师编写测试用例, 并逐项进行测试验证, 确保执行结果与预期的结果一致 为什么需要功能测试  站在用户的角度上, 确保系统的实现与需求一致">
   
     <link rel="alternate" href="/atom.xml" title type="application/atom+xml">
   
@@ -75,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      QA学习计划
+      QA学习
     </h1>
   
 
@@ -83,11 +86,47 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>一、功能测试基础知识</p>
+<p>什么是功能测试</p>
+<p>  功能测试, 也叫行为测试, 也有一种说法叫黑盒测试, 即测试人员完全不知道程序的内部是如何运行的</p>
+<p>  功能测试是所有测试工作中占比最大, 也是最重要的部分</p>
+<p>  主要是需求分析师根据用户需求编写出功能的用例, 然后由测试工程师编写测试用例, 并逐项进行测试验证, 确保执行结果与预期的结果一致</p>
+<p>为什么需要功能测试</p>
+<ol>
+<li><p>站在用户的角度上, 确保系统的实现与需求一致</p>
+</li>
+<li><p>由于是黑盒测试, 测试人员完全不知道应用的内部实现, 可以发现开发人员没有发现的问题, 找出有遗漏的地方</p>
+</li>
+<li><p>可以测试一些例外的问题, 比如乱操作, 不按既定的流程进行操作, 检查出应用的漏洞所在</p>
+<p>从以上几点我们可以得出: 功能测试=检查需求的实现+查找出功能实现的遗漏+检查应用是否有漏洞存在</p>
+</li>
+</ol>
+<p>如何进行功能测试</p>
+<p>  功能测试的六个步骤</p>
+<ol>
+<li><p>需求分析师根据需求编写功能的执行预期  </p>
+</li>
+<li><p>测试工程师根据需求分析师给出的执行预期, 编写测试用例</p>
+</li>
+<li><p>测试工程师根据需求分析师给出的执行预期, 准备所需要的数据, 包括测试所需的数据, 与预期结果的数据</p>
+</li>
+<li><p>测试工程师根据自己的测试用例执行测试用例操作</p>
+</li>
+<li><p>测试工程师比较实际结果与预期结果是否相同, 并给出报告报表</p>
+</li>
+<li><p>需求分析师根据测试工程师给出的报告判断应用是否符合用户的需求</p>
+<p>功能测试的两个方法</p>
+</li>
+<li><p>手动测试: 测试工程师根据测试用例, 进行手动形式的操作, 灵活, 花费时间少, 但是如果需要多次测试同一个功能时就会导致所消耗的时间增多, 并且准确性差, 有可能多次测试的结果一致性低; 适合一些只需测试一次或两次的功能, 或一些小功能, 或简单的操作的测试用例</p>
+</li>
+<li><p>自动化测试: 由测试工程师编写自动化测试用例, 由计算机代替手动测试, 灵活性会有所降低, 但是针对需要多次测试的功能时, 能大大提升测试的效率, 并减少重复的操作, 并能保证多次测试的一致性; 适合一些需要重复测试多次的, 测试用例复杂的, 操作繁琐的测试用例</p>
+</li>
+</ol>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/04/29/QA学习计划/" data-id="cjv25eaou000058cc3fvxf05o" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/04/29/QA学习计划/" data-id="cjveuiij10000hyccupb5t2f9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -126,7 +165,7 @@
       <ul>
         
           <li>
-            <a href="/2019/04/29/QA学习计划/">QA学习计划</a>
+            <a href="/2019/04/29/QA学习计划/">QA学习</a>
           </li>
         
       </ul>
